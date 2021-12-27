@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Paint</title>
+  </head>
+  <body class="body">
+    <!-- <h2 style="color: black">
+      <i class="fas fa-paint-brush" style="color: black"></i> Paint
+      <i class="fas fa-circle fa-1x" style="color: red"></i>
+      <i class="fas fa-circle" style="color: orangered"></i>
+      <i class="fas fa-circle" style="color: green"></i>
+    </h2> -->
+    <canvas width="1060" height="500" class="canvas" id="canvas1"
+      >canvas not supported in your browser</canvas
+    >
+    <div class="controller">
+      <!-- پاک کن - دایره - مستطیل - خط صاف - اسپری - پاک کردن کل صفحه -->
+      <div class="tools">
+      
+        <button id="pen" class="brush-item" title="براش">
+          <i class="fas fa-paint-brush"></i></button> <br>
+          <button id="del" class="brush-item" title="پاکن">
+            <i class="fa fa-eraser"></i>
+          </button> <br>
+        
+        <button id="line" class="brush-item" title="خط ">
+          <i class="fa fa-line-height"></i>
+        </button> <br>
+        <button id="mostatil" class="brush-item" title="مستطیل">
+          <i class="fa fa-rectangle-wide"></i>
+        </button> <br>
+      <button id="drawCircle" class="brush-item" title="دایره">
+        <i class="far fa-circle"></i>
+      </button> <br>
+        <button id="write" class="brush-item">
+          <i class="fa fa-text"></i>
+        </button>
+        <p>text box:</p>
+        <input
+          type="text"
+          id="writeInput"
+          placeholder="text"
+          style="width: 70%"
+        /> <br>
+        <label for="writeFont">FontFamily: </label> <br>
+        <select name="" id="writeFont">
+          <option value="Tahoma">Tahoma</option>
+          <option value="Verdana">Verdana</option>
+          <option value="sans-serif">sans-serif</option>
+        </select> <br>
+       
+        <label for="writeSize">FontSize: </label>
+        <input
+          type="text"
+          id="writeSize"
+          value="18"
+          style="width: 18px; border-radius: 5px"
+        /> <br>
+         
+      </div>
+      <div style=" margin-right: 5px; white-space: nowrap">
+        
+        <div> 
+          <label for="pen-size" id="pen-size-label">
+            Pen-size:10</label> <br>
+          <input
+            type="range"
+            id="pen-size"
+            min="5"
+            max="30"
+            value="10"
+            step="6"
+            onchange="penSizeChange()"
+            ;
+          /> <br>
+        </div> 
+         <div class="color"> <br>
+          <label for="color-tab" id="labelColor" value="#000000">color:</label>
+          <input type="color" id="colorTab" /> <br>
+        </div> <br> 
+      </div> 
+    </div>
+    <!-- saves -->
+    <div style="
+      border-radius: 5px; 
+      width: 95%;
+      height:25px;
+      margin-top: 0px;
+      background-color: rgba(240, 106, 233, 0.945);
+      margin-left: 2.5%;">
+     <div class="lastButtons">
+      <button id="reset-btn">
+        شروع مجدد
+        <i class="fa fresh"></i>
+      </button>
+      <button id="btn-uploadImage-url">
+        بارگذاری عکس پس زمینه از فایل سیستم
+      </button>
+      <button id="btn-uploadImage-uri">
+        بارگذاری عکس پس زمینه از اینترنت
+      </button>
+      <a href="canvas" id="download">
+        <i class="fa fa-download"
+        style="color: cornsilk;"></i>دانلود
+      </a>
+
+      <!-- <button id="btnSave">پیش نمایش</button>
+        <button id="btn-Convert-Html2Image">save </button> -->
+      </div> 
+    </div>
+    
+    <!-- <div id="prw"></div> -->
+  </body>
+  <script src="jsFile.js"></script>
+</html>

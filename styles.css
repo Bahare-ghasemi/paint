@@ -1,0 +1,61 @@
+.body {
+  background-color: rgba(248, 172, 205, 0.726);
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#pen-size-label {
+  margin-top: 100px;
+}
+.canvas {
+  margin-right: 2.5%;
+  float: right;
+  width: 80%;
+  height: 600px;
+  /* border: 1px solid rgba(190, 190, 190, 0.788); */
+  border-bottom: 0;
+  background-color: white;
+  border-radius: 5px; 
+}
+.controller {
+  border-radius: 5px; 
+  margin-left:2.5%;
+  background-color: rgba(252, 116, 245, 0.856);
+  width: 15%; 
+  height: 580px;
+  display: inline-block;
+  /* justify-content: flex-start; */
+  padding: 10px 0px 10px 0px;
+  border-width: 1px;
+  border-color: black;
+  align-items: center;
+ 
+}
+.brush-item {
+  width: 50px;
+  height: 50px;
+   border-radius: 5px; 
+  outline: none;
+  border: 3px solid rgba(190, 190, 190, 0.788);
+  background-color: (190, 190, 190, 0.788);
+}
+.label {
+  position: relative;
+  top: -5px;
+  white-space: nowrap;
+}
+.tools {
+  display: block;
+  justify-content: center;
+  white-space: nowrap;
+}
+.lastButtons {
+  margin-top: 5px;
+}
+ .color{
+   margin-top: 2px;
+   text-align: center;
+ }
